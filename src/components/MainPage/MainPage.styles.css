@@ -1,0 +1,74 @@
+.main-page {
+    width: 100vw;
+    height: fit-content;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.section1 {
+    display: flex;
+    background: linear-gradient(
+        to right,
+        #1C1C1C 0%,
+        #1C1C1C 50%,
+        #FEFEFE 50%,
+        #FEFEFE 100%
+      );
+}
+
+.black-section1 {
+    /* background-color: #1C1C1C; */
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.white-section1 {
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-header {
+    font-size: 6rem;
+    width: 70%;
+    font-weight: 400;
+    text-align: right;
+    margin: 1rem 0;
+    color: #1C1C1C;
+}
+
+.small-text {
+    text-align: right;
+    width: 70%;
+    font-size: 2rem;
+    margin: 0 0 2rem 0;
+    color: #3E3C34;
+}
+
+.sign-btn {
+    background-color: #1C1C1C;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-family: assistant;
+    padding: 0.5rem 1rem;
+}
