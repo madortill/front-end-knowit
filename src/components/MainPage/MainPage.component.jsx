@@ -16,7 +16,12 @@ const MainPage = (props) => {
                     <p className='small-text'>כנס חדשנות בלמידה 2023</p>
                     <button className='sign-btn pointer'>להרשמה</button>
                 </div>
-                <div className='black-section1'></div>
+                <div className='black-section1'>
+                    <div className='throw-object'></div>
+                    {/* <div className='blue-half-circle'></div>
+                    <div className='blue-circle'></div> */}
+                    {/* <div className='try'>...</div> */}
+                </div>
             </span>
             <span className='section2 section'>
                 <div className='white-section2'>
@@ -35,6 +40,17 @@ const MainPage = (props) => {
                         </div>
                     </div>
                     <CountdownTimer targetDate={props.targetDate} />
+                </div>
+            </span>
+            <span className='section3 section'>
+                <div className='black-section2'>
+                    <h1 className='white-text header header-people'>המרצים שלנו</h1>
+                    <div className='people-container'>
+                        <div className='person'></div>
+                        <div className='person'></div>
+                        <div className='person'></div>
+                        <div className='person'></div>
+                    </div>
                 </div>
             </span>
 
