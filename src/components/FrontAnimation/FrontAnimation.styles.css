@@ -1,0 +1,97 @@
+.front-animation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cover-objects {
+    width: 100%;
+    height: 15rem;
+    background-color: red;
+    position: relative;
+    align-self: flex-end;
+    /* background-image: url('../../media/images/headphones.png'); */
+}
+
+.item {
+   position: absolute;
+   /* background-color: blue; */
+   width: 12rem;
+   height: 12rem; 
+   top: 83%;
+   /* transform: translate(0%, 0%); */
+   /* left: 35%;
+   top: 10%; */
+   /* animation: throw 1s ease-out forwards; */
+   /* animation: floating 3s ease-in-out infinite; */
+}
+
+.item1 {
+   left: 2%;
+   transform: rotate(-180deg);
+    animation: throw1 1s ease-out forwards;
+}
+
+.item2 {
+    left: 12%;
+    transform: rotate(100deg);
+    animation: throw2 1s ease-out forwards;
+}
+
+.item3 {
+    left: 22%;
+    transform: rotate(100deg);
+    animation: throw3 1s ease-out forwards;
+}
+
+.item4 {
+    left: 32%;
+} 
+
+.item5 {
+    left: 42%;
+}
+
+@keyframes throw1 {
+    100% {
+        left: 0%;
+        top: 25%;
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes throw2 {
+    100% {
+        left: 15%;
+        top: 10%;
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes throw3 {
+    100% {
+        left: 12%;
+        top: 45%;
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes throw4 {
+    100% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
+@keyframes throw5 {
+    100% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}

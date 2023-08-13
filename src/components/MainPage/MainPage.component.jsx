@@ -1,6 +1,7 @@
 import './MainPage.styles.css';
 import CountdownTimer from '../countdown/CountdownTimer.component';
 import Slider from '../slider/slider.component';
+import FrontAnimation from '../FrontAnimation/FrontAnimation.component';
 
 const MainPage = (props) => {
 
@@ -17,7 +18,8 @@ const MainPage = (props) => {
                     <button className='sign-btn pointer'>להרשמה</button>
                 </div>
                 <div className='black-section1'>
-                    <div className='throw-object'></div>
+                    <FrontAnimation></FrontAnimation>
+                    {/* <div className='throw-object'></div> */}
                     {/* <div className='blue-half-circle'></div>
                     <div className='blue-circle'></div> */}
                     {/* <div className='try'>...</div> */}
