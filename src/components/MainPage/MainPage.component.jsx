@@ -28,11 +28,12 @@ const MainPage = (props) => {
             <span className='section2 section'>
                 <div className='white-section2'>
                     <div className='text-pic-section text-pic-section1'>
-                        <Slider className='slider'></Slider>
+                        
                         <div className='text-section text-section1'>
                             <h1 className='header'>KNOW IT?</h1>
                             <p className="main-page-text">{DATA[0]}</p>
                         </div>
+                        <Slider className='slider'></Slider>
                     </div>
                     <div className='text-pic-section text-pic-section2'>
                         <div className='logo-till'></div>
