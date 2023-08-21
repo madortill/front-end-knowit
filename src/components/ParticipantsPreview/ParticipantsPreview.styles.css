@@ -1,0 +1,58 @@
+.people-container {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.person {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 6px solid white;
+}
+
+.arrow {
+    width: 5rem;
+
+}
+
+@media only screen and (min-width: 768px) {
+    .people-container {
+        display: flex;
+        width: 80%;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+
+    .header-people {
+        width: 90%;
+    }
+
+    .see-more {
+        position: absolute;
+        display: flex;
+        width: 12rem;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        cursor: pointer;
+        left: 5rem;
+        top: 30rem;
+    }
+
+    .arrow {
+        width: 3rem;
+
+    }
+
+    .see-text {
+        font-size: 2rem;
+    }
+
+}

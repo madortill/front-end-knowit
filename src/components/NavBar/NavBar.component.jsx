@@ -2,10 +2,12 @@ import './NavBar.styles.css'
 import menu from '../../media/images/menu.png';
 import LOGO from '../../media/images/KNOWIT-LOGO.svg';
 import { motion } from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import { useRef, useState, useEffect } from 'react';
 
 const NavBar = (props) => {
+  const navigate = useNavigate();
   const navIconRef = useRef();
   const [isInViewDate, setIsInViewDate] = useState(true);
   const [isMenu, setIsMenu] = useState(false);
@@ -28,8 +30,7 @@ const NavBar = (props) => {
       setIsMenu(true);
     }
   }
-
-
+  
   return (
     <div className="nav-bar">
       <div className="split-color nav-bar-container">
@@ -44,12 +45,9 @@ const NavBar = (props) => {
           <span></span>
           <span></span>
         </div>
-        
         {/* <img src={menu} className='menu-icon pointer' onClick={() => props.handleMenu()}/> */}
-        <img src={LOGO} className='know-it-logo pointer'/>
+        <img src={LOGO} onClick={() => navigate("/home")} className='know-it-logo pointer'/>
       </div>
-
-
       <Outlet></Outlet>
 
     </div>

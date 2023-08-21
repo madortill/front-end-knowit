@@ -145,20 +145,6 @@
     height: 20rem;
 }
 
-.people-container {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.person {
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    background-color: rgb(212, 249, 255);
-}
-
 .black-section2 {
     display: flex;
     flex-direction: column;
@@ -347,25 +333,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: flex-start;
-    }
-
-    .people-container {
-        display: flex;
-        width: 70%;
         align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .person {
-        width: 15rem;
-        height: 15rem;
-        border-radius: 50%;
-        background-color: rgb(212, 249, 255);
-    }
-
-    .header-people {
-        margin: 0 3rem 0 0;
     }
 
     .blue-circle {
@@ -401,11 +369,12 @@
         flex-wrap: wrap;
         align-content: flex-start;
         justify-content: center;
+        margin: 0;
     }
     
 
     .square {
-        width: 32%;
+        width: 33.33%;
         height: 49%;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;

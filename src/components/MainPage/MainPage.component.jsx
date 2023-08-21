@@ -3,6 +3,7 @@ import { motion, useScroll, useAnimation, useInView } from "framer-motion";
 import { useEffect, useState, useRef } from 'react';
 import CountdownTimer from '../countdown/CountdownTimer.component';
 import Slider from '../slider/slider.component';
+import ParticipantsPreview from '../ParticipantsPreview/ParticipantsPreview.component';
 import FrontAnimation from '../FrontAnimation/FrontAnimation.component';
 
 const MainPage = (props) => {
@@ -74,13 +75,7 @@ const MainPage = (props) => {
             </span>
             <span className='section3 section'>
                 <div className='black-section2'>
-                    <h1 className='white-text header header-people'>המרצים שלנו</h1>
-                    <div className='people-container'>
-                        <div className='person'></div>
-                        <div className='person'></div>
-                        <div className='person'></div>
-                        <div className='person'></div>
-                    </div>
+                    <ParticipantsPreview></ParticipantsPreview>
                 </div>
                 <div className='detail-squars'>
                     <div className='square'></div>
