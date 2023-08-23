@@ -15,8 +15,8 @@
 
 .item {
     position: absolute;
-    width: 4rem;
-    height: 4rem;
+    width: 8rem;
+    height: 8rem;
     /* top: 50%; */
 }
 
@@ -208,14 +208,14 @@
 
     .item {
         position: absolute;
-        width: 13rem;
-        height: 13rem;
         top: 83%;
     }
 
     .item1 {
         left: 0%;
         top: 25%;
+        width: 23rem;
+        height: 23rem;
         transform: rotate(-180deg);
         animation: throw1 2s cubic-bezier(0, 0, 0.28, 0.94) forwards;
     }
@@ -223,13 +223,17 @@
     .item2 {
         left: 17%;
         top: 10%;
+        width: 33rem;
+        height: 33rem;
         transform: rotate(100deg);
         animation: throw2 2s cubic-bezier(0, 0, 0.28, 0.94) forwards;
     }
 
     .item3 {
         left: 12%;
-        top: 51%;
+        top: 41%;
+        width: 33rem;
+        height: 33rem;
         transform: rotate(100deg);
         animation: throw3 2s cubic-bezier(0, 0, 0.28, 0.94) forwards;
     }
@@ -237,6 +241,8 @@
     .item4 {
         left: 33%;
         top: 42%;
+        width: 23rem;
+        height: 23rem;
         transform: rotate(-50deg);
         animation: throw4 2s cubic-bezier(0, 0, 0.28, 0.94) forwards;
     }

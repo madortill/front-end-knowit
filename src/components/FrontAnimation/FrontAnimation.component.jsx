@@ -1,6 +1,9 @@
 import { useRef } from 'react'
 import './FrontAnimation.styles.css'
-import headphones from '../../media/images/headphones.png'
+import headphones from '../../media/images/headphones.svg'
+import vr from '../../media/images/vr.svg'
+import laptop from '../../media/images/laptop.svg'
+import hologram from '../../media/images/hologram.svg'
 
 const FrontAnimation = () => {
     const itemRef1 = useRef();
@@ -14,21 +17,17 @@ const FrontAnimation = () => {
             "ref": itemRef1
         },
         {
-            "link": headphones,
+            "link": laptop,
             "ref": itemRef2
         },
         {
-            "link": headphones,
+            "link": hologram,
             "ref": itemRef3
         },
         {
-            "link": headphones,
+            "link": vr,
             "ref": itemRef4
-        },
-        {
-            "link": headphones,
-            "ref": itemRef5
-        },
+        }
     ]
 
 
@@ -42,7 +41,7 @@ const FrontAnimation = () => {
         {/* element.ref.current.classList.add("floatingAnimation"); element.ref.current.classList.remove(`item${index + 1}`); */}
         
         {ITEMS.map((element, index) => (
-            <img src={element.link} key={index} ref={element.ref} onAnimationEnd={() => {element.ref.current.style.animation += `floating${index + 1} 3s ease-in-out infinite`;}} className={`item${index + 1} item`}/>
+            <img src={element.link} key={index} ref={element.ref} onAnimationEnd={() => {element.ref.current.style.animation += `floating${index + 1} 6s ease-in-out infinite`;}} className={`item${index + 1} item`}/>
         ))}
         {/* <div className='item1 item'></div>
         <div className='item2 item'></div>

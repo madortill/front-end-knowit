@@ -1,6 +1,7 @@
 import './SquareDetails.styles.css';
 import calendar from '../../media/images/calendar.png';
 import waze from '../../media/images/waze.png';
+import InfoIcons from '../InfoIcons/InfoIcons.component'
 
 const SquareDetails = (props) => {
 
@@ -37,8 +38,8 @@ const SquareDetails = (props) => {
             ))}
             <div className='square' style={{ justifyContent: 'center'}}>
                 <div className='icons-container-square'>
-                    <img className="square-icons" src={waze}/>
-                    <img className="square-icons" src={calendar}/>
+                    <InfoIcons></InfoIcons>
+
                 </div>
                 
             </div>

@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import MainPage from './components/MainPage/MainPage.component';
 import NavBar from "./components/NavBar/NavBar.component";
 import Menu from "./components/Menu/Menu.component";
+import ParticipantsPage from "./components/ParticipantsPage/ParticipantsPage.component";
 import ContactInfo from "./components/ContactInfo/ContactInfo.component";
 import { useState } from "react";
 import './App.css';
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<><NavBar isOpen={isMenu} isDate={isDate} handleMenu={handleMenu}/><Menu isOpen={isMenu} handleMenu={handleMenu}/></>}>
           <Route path="home" element={<MainPage handleDate={handleDate} targetDate={dateTimeAfterNumDays}/>}></Route>
           <Route path="contact" element={<ContactInfo/>}></Route>
+          <Route path="lectures" element={<ParticipantsPage/>}></Route>
         </Route>
       </Routes>
     </div>

@@ -36,7 +36,7 @@ const Menu = (props) => {
           <img className='menu-item-icon' src={home} />
           <div className='menu-item-header'>ראשי</div>
         </div>
-        <div className='menu-item disabled-item'>
+        <div className='menu-item' onClick={() => {handleClose(); navigate("/lectures"); }}>
           <img className='menu-item-icon' src={man} />
           <div className='menu-item-header'>רשימת המרצים</div>
         </div>

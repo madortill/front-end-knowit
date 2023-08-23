@@ -22,7 +22,6 @@ import image20 from '../../media/images_slider/img20.jpg';
 import image21 from '../../media/images_slider/img21.jpg';
 import image22 from '../../media/images_slider/img22.jpg';
 import image23 from '../../media/images_slider/img23.jpg';
-import image24 from '../../media/images_slider/img24.jpg';
 import React from "react";
 import ImageGallery from 'react-image-gallery';
 const Slider = (props) => {
@@ -118,11 +117,7 @@ const Slider = (props) => {
         {
             original: image23,
             thumbnail: image23,
-        },
-        {
-            original: image24, 
-            thumbnail: image24,
-        },
+        }
         ];
 
             return (
