@@ -110,7 +110,7 @@ const ParticipantsPage = () => {
                     ))}
                 </div>
 
-                <h1 className='participants-title'>מושב ראשון</h1>
+                <h1 className='participants-title'>מושבים</h1>
                 <div className='secondary-card-container'>
                     {SEAT1.map((element, index) => (
                         <div className='secondary-card' key={index}>
@@ -126,7 +126,12 @@ const ParticipantsPage = () => {
                     ))}
                 </div>
 
-                <h1 className='participants-title'>מושב שני</h1>
+                <h1 className='participants-title'>תערוכה</h1>
+                <div className='exhibition-container'>
+                    <div></div>
+                </div>
+
+                {/* <h1 className='participants-title'>מושב שני</h1>
                 <div className='secondary-card-container'>
                     {SEAT2.map((element, index) => (
                         <div className='secondary-card' key={index}>
@@ -139,7 +144,7 @@ const ParticipantsPage = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div> */}
 
 
 
