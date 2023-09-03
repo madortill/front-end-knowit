@@ -41,7 +41,7 @@
     color: black;
     font-size: 4rem;
     margin: 2rem 0;
-    margin-top: 10rem;
+    margin-top: 7rem;
     width: 90%;
     text-align: right;
 }
@@ -69,12 +69,12 @@
 
 .main-topic {
     font-size: 2rem;
-    margin: 0;
+    margin: 2rem 0 0 0;
 }
 
 .main-name {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
 }
 
 .main-text {
@@ -83,7 +83,7 @@
 }
 
 .secondary-topic {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0 0 1rem 0;
 }
 
@@ -93,14 +93,14 @@
 }
 
 .secondary-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0 0 1rem 0;
 }
 
 .read-more-btn {
     color: black;
-    width: 10rem;
-    font-size: 1.5rem;
+    width: 8rem;
+    font-size: 1.2rem;
     font-family: assistant;
     background-color: #defb82;
     border: none;
@@ -146,7 +146,7 @@
 }
 
 .secondary-card {
-    width: 60rem;
+    width: 30rem;
     height: max-content;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -167,19 +167,34 @@
 }
 
 .secondary-img {
-    width: 18rem;
-    height: 18rem;
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
     background-position: center;
     background-size: cover;
     flex-shrink: 0;
     margin: 2rem 2rem 2rem 0;
-    box-shadow: -5em 0 0 0 #defb82;
+    box-shadow: -2em 0 0 0 #defb82;
+}
+
+.read-more-btn-secondary {
+    color: rgb(255, 255, 255);
+    width: 8rem;
+    font-size: 1.2rem;
+    font-family: assistant;
+    background-color: #1c1c1c;
+    border: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 1rem 0 0;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
     .dark-card-container {
         display: flex;
+        flex-direction: row;
         width: 90%;
         justify-content: space-between;
         align-content: center;
@@ -256,11 +271,12 @@
         margin: 2rem 0;
         /* background-size: 100% 100%;
         background-repeat: no-repeat; */
-
+        border-radius: 250px 250px 0 250px;
     }
 
     .main-topic {
-        margin: 2rem 0 0 0;
+        font-size: 2.5rem;
+        
     }
 
 

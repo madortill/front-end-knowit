@@ -110,7 +110,7 @@ const ParticipantsPage = () => {
                     ))}
                 </div>
 
-                <h1 className='participants-title'>מושבים</h1>
+                <h1 className='participants-title' style={{marginTop: '4rem'}}>מושבים</h1>
                 <div className='secondary-card-container'>
                     {SEAT1.map((element, index) => (
                         <div className='secondary-card' key={index}>
@@ -126,7 +126,7 @@ const ParticipantsPage = () => {
                     ))}
                 </div>
 
-                <h1 className='participants-title'>תערוכה</h1>
+                <h1 className='participants-title'>תערוכות</h1>
                 <div className='exhibition-container'>
                     <div></div>
                 </div>
